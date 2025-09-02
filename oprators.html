@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Arithmatic oprator -,+,=,++,--,/,*,%,** -->
+    <script>
+        var a=10;
+        var b=3;
+        c= a**b;
+        c++;
+        c--;
+        c++;
+        c++;
+        c++;
+        c--;
+        document.write(c);
+
+    </script>
+    <!-- Assigment oprator - =,+=,-= -->
+     <script>
+        var x=10;
+        var y=3;
+        x+=y;
+        document.write(x);
+        document.write(y);
+
+     </script>
+     <!-- Comparision Oprator !=,<=,>=,==,=== -->
+      <script>
+        var p=12;
+        var q="12";
+        if(p==q){
+            document.write("true");
+        }else{
+             document.write("False");
+        }
+      </script>
+      <!-- Logical Operator &&,||,! -->
+
+      <script>
+    /*var age=18;
+        if(age>=18 && age<=100){
+            document.write("Eligible for Vote");
+        }else{
+            document.write("Not Eligible for Vote");
+        } */
+
+        var day="sunday";
+        if(day==="sunday" || day==="Saturday"){
+            document.write("Weekend");
+        }else{
+            document.write("Weekdays");
+        }
+
+        //ternary operator
+        var age=12;
+        var eligibilty =(age>=18) ? "eligible " : "not Eligible";
+        documnet.write(eligibilty);
+
+      </script>
+</body>
+</html>
