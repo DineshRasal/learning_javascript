@@ -35,6 +35,38 @@
         console.log(77+33);
     </script>
 
+    <script>
+        //global scope
+        var x=100;
+        let y=101;
+        const z=102;
+
+        function scopeExample(){
+        var x=10;   //Function scope
+        let y=20;   // block Scope
+        const z=30;   //block scope
+        if(true)
+        {            //inside The Fuction
+        var x=1;     //reasign value
+        let y=2;      // block Scope  
+        const z=3;    // block Scope
+        document.write(x);  //1
+        document.write(y);  //2
+        document.write(z);  //3
+        document.write("<br>");
+        }
+        //Outside the function
+        document.write(x);      //1
+        document.write(y);      //20
+        document.write(z);      //30
+        document.write("<br>");
+        }
+        document.write(x);      //100
+        document.write(y);      //101
+        document.write(z);      //102
+        document.write("<br>");
+        scopeExample();
+    </script>
         <script src="js/script.js" type="text/javascript"></script>
 
 </body>
