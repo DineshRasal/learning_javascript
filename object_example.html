@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var a={
+            fname:'Anand',
+            lname:'Rasal',
+            age:22,
+            email:"rushirasal2679@gmail.com",
+            players:['sachine','virendra','rohit','virat'],
+            address:{
+                'city':'solapur',
+                'country':'india',
+
+            },
+            phone:7666283439
+        };
+        document.write("name:-"+a.fname+"<br>age is:-" +a.age + "fav player"+a.players[2] +"i am from" +a.city)
+    </script>
+
+    <script>
+        var employee =[{name:"Rushi",age:22,salary:55000},
+        {name:"Abhi",age:28,salary:35000},
+        {name:"Mahi",age:25,salary:25000},
+        {name:"Nikita",age:25,salary:5000},
+        {name:"Vivek",age:26,salary:95000},
+        {name:"Adarsh",age:27,salary:85000},]
+
+        for(var i=0;i<employee.length;i++){
+            document.write(employee[i].name +"=" +employee[i].age +employee[i].salary +"<br>");
+        }
+    </script>
+</body>
+</html>
